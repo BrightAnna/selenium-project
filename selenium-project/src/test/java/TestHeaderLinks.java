@@ -18,6 +18,8 @@ public class TestHeaderLinks {
 
         Assert.assertEquals(driver.getTitle(), "Online Store | My Store");
 
+        driver.quit();
+
     }
 
     @Test
@@ -30,6 +32,8 @@ public class TestHeaderLinks {
         rubberDuckLink.click();
 
         Assert.assertEquals(driver.getTitle(), "Rubber Ducks | My Store");
+
+        driver.quit();
 
     }
 
@@ -47,5 +51,8 @@ public class TestHeaderLinks {
 
         Assert.assertEquals(driver.getTitle(), "Subcategory | My Store");
 
+        driver.quit();
+
     }
+
 }

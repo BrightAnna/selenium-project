@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class TestExample {
+
     @Test
     public void BrowserLinks() {
         WebDriver driver = new ChromeDriver();
@@ -20,7 +21,10 @@ public class TestExample {
 
         allLinks.get(9).click();
 
-        Assert.assertEquals(driver.getTitle(),"The Internet");
+        Assert.assertEquals(driver.getTitle(), "The Internet");
+
+        driver.quit();
 
     }
+
 }

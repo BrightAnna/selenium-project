@@ -21,7 +21,7 @@ public class CartPage {
         return driver.findElement(cartIsEmptyText).isDisplayed();
     }
 
-    public String getCarIsEmptyText() {
+    public String getCartIsEmptyText() {
         return driver.findElement(cartIsEmptyText).getText();
     }
 }

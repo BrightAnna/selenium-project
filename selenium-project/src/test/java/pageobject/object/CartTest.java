@@ -19,7 +19,7 @@ public class CartTest extends TestBase {
         cartPage.clickRemoveButton();
 
         softAssert.assertTrue(cartPage.emptyCartIsDisplayed(), "Empty cart is not displayed");
-        softAssert.assertEquals(cartPage.getCarIsEmptyText(), "There are no items in your cart.");
+        softAssert.assertEquals(cartPage.getCartIsEmptyText(), "There are no items in your cart.");
         softAssert.assertAll();
 
     }
